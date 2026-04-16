@@ -57,6 +57,6 @@ const portfolioData = {
   },
   // --- Footer ---
   footer: {
-    text: "© 2025 Kahraman KINALI. Built with precision."
+    text: "© 2026 Kahraman KINALI. Built with precision."
   }
 };
