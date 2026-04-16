@@ -50,7 +50,7 @@ const portfolioData = {
     description: "I am currently open to internships and collaborative projects. Feel free to reach out via email or connect on professional platforms.",
     email: "kinalik@mef.edu", 
     social: {
-      linkedin: "https://www.linkedin.com/in/kahraman-kinali-900281324/",
+      linkedin: "https://www.linkedin.com/in/kahraman-kinali/",
       github: "https://github.com/kahramannkinali",
       twitter: "" 
     }
