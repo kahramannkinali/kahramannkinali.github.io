@@ -12,7 +12,7 @@ const portfolioData = {
   // --- Hero Section ---
   hero: {
     headline: "Engineering Focuses",
-    subheadline: "An EEE student with a focus on IoT, robotics, and sustainable technology/energy.",
+    subheadline: "An EEE student with a focus on IoT, robotics and sustainable technology/energy.",
     ctaText: "View My Projects",
     ctaLink: "#projects",
     profileImage: "./Profil.jpg"
