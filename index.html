@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Custom Teal Palette
+                        teal: {
+                            400: '#2dd4bf', // Bright accent for text
+                            500: '#14b8a6', // Hover states
+                            600: '#0d9488', // Primary buttons/backgrounds
+                            700: '#0f766e', // Darker backgrounds
+                            900: '#134e4a', // Deep accents
+                        },
+                        // Custom Dark Palette
+                        gray: {
+                            800: '#1e293b', // Card background
+                            900: '#0f172a', // Section background
+                            950: '#020617', // Main body background
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar for Chrome/Safari/Edge */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0d9488; }
+        
+        .fade-in { animation: fadeIn 1s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased selection:bg-teal-900 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-950/90 backdrop-blur-md border-b border-gray-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-white tracking-tight hover:text-teal-400 transition" id="nav-name">Portfolio</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-400 hover:text-teal-400 transition font-medium">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-teal-400 transition font-medium">Projects</a>
+                    <a href="#cv" class="text-gray-400 hover:text-teal-400 transition font-medium">Resume</a>
+                    <a href="#contact" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition shadow-lg shadow-teal-900/20">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto min-h-[90vh] flex items-center">
+        <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+            <!-- Text Content -->
+            <div class="order-2 md:order-1">
+                <p class="text-teal-400 font-semibold mb-2 tracking-wide uppercase text-sm" id="hero-role">Loading...</p>
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" id="hero-headline">
+                    Loading...
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 leading-relaxed max-w-lg" id="hero-subheadline">
+                    Loading...
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" id="hero-cta" class="bg-teal-600 hover:bg-teal-500 text-white font-semibold py-3 px-8 rounded-lg transition shadow-lg shadow-teal-900/30">
+                        View Work
+                    </a>
+                    <a href="#contact" class="bg-transparent border border-gray-700 hover:border-teal-400 hover:text-teal-400 text-gray-300 font-semibold py-3 px-8 rounded-lg transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Photo -->
+            <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-teal-600 rounded-full blur-3xl opacity-20 transform translate-x-4 translate-y-4"></div>
+                    <img id="hero-img" src="" alt="Profile Photo" 
+                         class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-gray-800 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 border-y border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                <span class="bg-teal-600 w-2 h-8 mr-4 rounded"></span>
+                <span id="about-title">About Me</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="md:col-span-2">
+                    <p class="text-lg text-gray-400 leading-relaxed whitespace-pre-line" id="about-desc">
+                        Loading...
+                    </p>
+                </div>
+                <!-- Skills Column -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 h-fit shadow-lg">
+                    <h3 class="text-lg font-bold text-white mb-4 border-b border-gray-700 pb-2">Technical Toolkit</h3>
+                    <div class="flex flex-wrap gap-2" id="skills-container">
+                        <!-- Skills injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="bg-teal-600 w-2 h-8 mr-4 rounded"></span>
+                Projects & Achievements
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+                <!-- Projects injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="py-24 relative overflow-hidden bg-gray-900 border-t border-gray-800">
+        <!-- Decorative bg element -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-teal-900 rounded-full mix-blend-screen filter blur-3xl opacity-10"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white" id="cv-title">CV</h2>
+            <p class="text-gray-400 mb-10 text-lg max-w-2xl mx-auto" id="cv-text">Loading...</p>
+            <a href="" id="cv-btn" target="_blank" class="inline-flex items-center bg-teal-600 hover:bg-teal-500 text-white font-bold py-4 px-10 rounded-full transition shadow-xl transform hover:-translate-y-1">
+                <i class="fas fa-file-download mr-3"></i> <span id="cv-btn-text">Download</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6" id="contact-title">Contact</h2>
+            <p class="text-lg text-gray-400 mb-10" id="contact-desc">Loading...</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <!-- Email Button -->
+                <a id="contact-email" href="" class="flex items-center gap-3 bg-gray-800 hover:bg-gray-700 border border-gray-700 text-white py-3 px-6 rounded-lg transition w-full md:w-auto justify-center group">
+                    <i class="fas fa-envelope text-teal-400 group-hover:scale-110 transition"></i>
+                    <span id="display-email">Email Me</span>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a id="contact-linkedin" href="" target="_blank" class="flex items-center gap-3 bg-[#0077b5] hover:bg-[#006097] text-white py-3 px-6 rounded-lg transition w-full md:w-auto justify-center">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a id="contact-github" href="" target="_blank" class="flex items-center gap-3 bg-gray-800 hover:bg-black border border-gray-700 text-white py-3 px-6 rounded-lg transition w-full md:w-auto justify-center">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 py-10 border-t border-gray-800 text-center text-sm">
+        <p id="footer-text">© 2024</p>
+    </footer>
+
+    <!-- LOGIC SCRIPT -->
+    <script src="data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const d = portfolioData; // Short alias
+
+            // Navbar
+            document.getElementById('nav-name').innerText = d.name;
+
+            // Hero
+            document.getElementById('hero-role').innerText = d.role;
+            document.getElementById('hero-headline').innerText = d.hero.headline;
+            document.getElementById('hero-subheadline').innerText = d.hero.subheadline;
+            document.getElementById('hero-cta').innerText = d.hero.ctaText;
+            document.getElementById('hero-cta').href = d.hero.ctaLink;
+            
+            // Hero Image
+            const heroImg = document.getElementById('hero-img');
+            heroImg.src = d.hero.profileImage;
+            heroImg.alt = `${d.name} - ${d.role}`;
+
+            // About
+            document.getElementById('about-title').innerText = d.about.title;
+            document.getElementById('about-desc').innerHTML = d.about.description.replace(/\n/g, '<br>'); 
+            
+            // Skills (Dark Theme Styling)
+            const skillsBox = document.getElementById('skills-container');
+            d.about.skills.forEach(skill => {
+                // Dark background, Teal text, Dark border
+                skillsBox.innerHTML += `<span class="px-3 py-1 bg-gray-900 border border-gray-700 rounded text-sm font-medium text-teal-400 shadow-sm">${skill}</span>`;
+            });
+
+            // Projects (Dark Theme Styling)
+            const projBox = document.getElementById('projects-container');
+            d.projects.forEach(p => {
+                // Tech badges: Dark Teal background, Light Teal text
+                const techs = p.technologies.map(t => `<span class="text-[10px] font-bold text-teal-300 bg-teal-900/40 px-2 py-1 rounded uppercase tracking-wider">${t}</span>`).join('');
+                
+                const html = `
+                    <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 flex flex-col h-full group hover:border-teal-700 transition duration-300">
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="mb-4">
+                                <span class="text-xs font-bold tracking-wider text-teal-500 uppercase">${p.category}</span>
+                                <h3 class="text-xl font-bold text-white mt-1 group-hover:text-teal-400 transition-colors">${p.title}</h3>
+                            </div>
+                            <p class="text-gray-400 mb-6 text-sm leading-relaxed flex-1">${p.description}</p>
+                            <div class="flex flex-wrap gap-2 mb-6">${techs}</div>
+                            <a href="${p.link}" class="inline-flex items-center text-sm font-bold text-white hover:text-teal-400 transition">
+                                View Project <i class="fas fa-arrow-right ml-2 text-teal-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                projBox.innerHTML += html;
+            });
+
+            // CV Section
+            document.getElementById('cv-title').innerText = d.cv.title;
+            document.getElementById('cv-text').innerText = d.cv.text;
+            document.getElementById('cv-btn').href = d.cv.fileURL;
+            document.getElementById('cv-btn-text').innerText = d.cv.buttonText;
+
+            // Contact Section
+            document.getElementById('contact-title').innerText = d.contact.title;
+            document.getElementById('contact-desc').innerText = d.contact.description;
+            
+            // Contact Links
+            const emailBtn = document.getElementById('contact-email');
+            emailBtn.href = `mailto:${d.contact.email}`;
+            document.getElementById('display-email').innerText = d.contact.email;
+
+            const setSocial = (id, url) => {
+                const el = document.getElementById(id);
+                if(url) el.href = url;
+                else el.style.display = 'none';
+            };
+            setSocial('contact-linkedin', d.contact.social.linkedin);
+            setSocial('contact-github', d.contact.social.github);
+
+            // Footer
+            document.getElementById('footer-text').innerText = d.footer.text;
+        });
+    </script>
+</body>
+</html>
