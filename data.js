@@ -8,33 +8,31 @@ const portfolioData = {
   // --- General Info ---
   name: "Kahraman KINALI",
   role: "Electrical & Electronics Engineering Student",
-  location: "İstanbul,Türkiye/Turkey",
+  location: "İstanbul, Türkiye / Turkey",
   // --- Hero Section ---
   hero: {
     headline: "Engineering Focuses",
     subheadline: "An EEE student with a focus on IoT, robotics, and sustainable technology/energy.",
     ctaText: "View My Projects",
     ctaLink: "#projects",
-    // ✅ FIX 1: Updated name from "Your+Name" to your actual name
     profileImage: "./Profil.jpg"
-    // To use a local photo instead: "./images/profile.jpg"
   },
   // --- About Section ---
   about: {
     title: "About Me",
     description: `
       I am an Electrical and Electronics Engineering student passionate about robotics and efficiency. 
-      My academic background has provided me with a strong foundation in circuit analysis,and coding in Java while my personal projects have pushed me to learn about many diffrent topics like sustainble energy, infrastucture and grids I am also capable of designing in 3D since middle-school.
-I am interesed in topics like Sustainabilty,Renewable Energy and IoT. 
+      My academic background has provided me with a strong foundation in circuit analysis and coding in Java, while my personal projects have pushed me to learn about many different topics like sustainable energy, infrastructure and grids. I am also capable of designing in 3D since middle school.
+      I am interested in topics like Sustainability, Renewable Energy and IoT.
     `,
-    skills: ["Java", "3D design", "IoT",]
+    skills: ["Java", "3D Design", "IoT"]
   },
   // --- Projects Section ---
   projects: [
     {
       title: "Optifarm",
       category: "Startup / AI & IoT",
-      description: "Me and my 2 other friends had a change develop a startup idea in an event out university was hosted and in that event I desinged a webiste that was ment to analysie the wheater, soil ,terrain of an spesific area with this input the AI would give you advices that optimizes the yield from the farm.",
+      description: "My two friends and I had a chance to develop a startup idea in an event our university hosted. In that event, I designed a website meant to analyse the weather, soil and terrain of a specific area. With this input, the AI would give advice that optimises the yield from the farm.",
       technologies: ["Python", "IoT Sensors", "Machine Learning", "Data Analytics"],
       link: "https://kahramannkinali.github.io/OPTIFARM/" 
     }
@@ -59,6 +57,6 @@ I am interesed in topics like Sustainabilty,Renewable Energy and IoT.
   },
   // --- Footer ---
   footer: {
-    text: "© 2024 Your Name. Built with precision."
+    text: "© 2025 Kahraman KINALI. Built with precision."
   }
 };
