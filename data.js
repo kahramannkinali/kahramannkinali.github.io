@@ -34,7 +34,7 @@ I am interesed in topics like Sustainabilty,Renewable Energy and IoT.
     {
       title: "Optifarm",
       category: "Startup / AI & IoT",
-      description: "Co-founded an AI-powered agricultural assistant. We utilize IoT sensors to analyze soil moisture and nutrient levels, processing data to provide farmers with actionable insights for yield optimization.",
+      description: "Me and my 2 other friends had a change develop a startup idea in an event out university was hosted and in that event I desinged a webiste that was ment to analysie the wheater, soil ,terrain of an spesific area with this input the AI would give you advices that optimizes the yield from the farm.",
       technologies: ["Python", "IoT Sensors", "Machine Learning", "Data Analytics"],
       link: "https://kahramannkinali.github.io/OPTIFARM/" 
     }
